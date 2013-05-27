@@ -1,7 +1,9 @@
 #hideSidebarButton {
   position: fixed;
-  width:7px;
-  height:23px;
+/* Highrise/Button patch*/
+  width:20px;
+  height:122px;
+  z-index:11;
 }
 
 #hideSidebarButton:hover {
@@ -9,24 +11,33 @@
 }
 
 .hide {
-  background:url("../images/buttons.png") -7px 0;
+/* Highrise/Button patch*/
+  background:url("../images/sidebar.png") 0 0;
 }
 
 .show {
-  background:url("../images/buttons.png") 0 0;
+/* Highrise/Button patch*/
+  background:url("../images/sidebar.png") 0 0;
 }
 
 #sidebarHandler {
   position: absolute;
-  float: right;
+  float: left;
   top:50px;
-  right:0px;
+/* Highrise/Button patch*/
+  right:12px;
   margin-top:50px;
   margin-right: 7px;
   z-index: 11;
 }
 
+/* Highrise/Button patch*/
+#sidebar {
+  width: 20% !important;
+}
 #content {
   position: relative;
-  padding: 6px 20px 10px 10px;
+  /* Highrise/Button patch*/
+  # padding: 6px 33px 10px 10px;
+  padding: 6px 30px 10px 10px;
 }
